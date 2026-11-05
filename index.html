@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>New gekkocorporation.com: preview</title>
+<style>
+  /* Viewer chrome only. It deliberately uses a cool slate + blue tool palette
+     and the system font, so it can never be mistaken for the site's own
+     cream / green / Rubik design. */
+  :root {
+    --v-bg: #EEF1F5; --v-panel: #FFFFFF; --v-line: #D7DCE4; --v-hover: #F3F5F9;
+    --v-text: #1C2330; --v-soft: #5B6576; --v-accent: #2F5BD3; --v-accent-wash: #E4EBFB;
+    --v-stage: #DFE3EA; --v-device: #1C2330;
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    display: grid; grid-template-columns: 260px 1fr; grid-template-rows: auto 1fr;
+    background: var(--v-bg); color: var(--v-text);
+    font: 500 14px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  ::selection { background: var(--v-accent-wash); }
+  :focus-visible { outline: 2px solid var(--v-accent); outline-offset: 2px; }
+
+  .side { grid-row: 1 / span 2; display: flex; flex-direction: column; min-height: 0; border-right: 1px solid var(--v-line); background: var(--v-panel); }
+  .brand { padding: 18px 18px 14px; border-bottom: 1px solid var(--v-line); }
+  .brand b { display: block; font-size: 15px; font-weight: 650; }
+  .brand span { display: block; margin-top: 2px; font-size: 12.5px; color: var(--v-soft); }
+  .list { flex: 1; overflow-y: auto; padding: 10px 8px 20px; }
+  .list button {
+    display: block; width: 100%; padding: 9px 12px; border: 0; border-radius: 6px;
+    background: none; color: var(--v-text); font: inherit; text-align: left; cursor: pointer;
+  }
+  .list button:hover { background: var(--v-hover); }
+  .list button[aria-current="page"] { background: var(--v-accent-wash); color: var(--v-accent); font-weight: 650; }
+  .list button small { display: block; margin-top: 1px; font-size: 12px; font-weight: 500; color: var(--v-soft); }
+  .note { margin: 0; padding: 12px 18px; border-top: 1px solid var(--v-line); font-size: 12px; color: var(--v-soft); }
+  .note kbd { padding: 1px 5px; border: 1px solid var(--v-line); border-radius: 4px; background: var(--v-bg); font: inherit; font-size: 11.5px; }
+
+  .bar {
+    display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+    padding: 10px 16px; border-bottom: 1px solid var(--v-line); background: var(--v-panel);
+  }
+  .bar h1 { flex: 1; min-width: 160px; margin: 0; font-size: 15px; font-weight: 650; }
+  .seg { display: inline-flex; padding: 2px; border: 1px solid var(--v-line); border-radius: 8px; background: var(--v-bg); }
+  .seg button { padding: 6px 12px; border: 0; border-radius: 6px; background: none; color: var(--v-soft); font: inherit; cursor: pointer; }
+  .seg button[aria-pressed="true"] { background: var(--v-panel); color: var(--v-text); box-shadow: 0 1px 2px rgba(28, 35, 48, .12); }
+  .btn {
+    display: inline-flex; align-items: center; gap: 6px; padding: 7px 12px;
+    border: 1px solid var(--v-line); border-radius: 8px; background: var(--v-panel);
+    color: var(--v-text); font: inherit; text-decoration: none; cursor: pointer;
+  }
+  .btn:hover { border-color: var(--v-accent); color: var(--v-accent); }
+  .btn--primary { border-color: var(--v-accent); background: var(--v-accent); color: #fff; }
+  .btn--primary:hover { background: #2349B3; color: #fff; }
+  .btn svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+  .stage { position: relative; min-height: 0; overflow: auto; background: var(--v-stage); }
+  .stage iframe { display: block; width: 100%; height: 100%; border: 0; background: #fff; }
+  .stage.phone { display: flex; justify-content: center; padding: 24px 16px; }
+  .stage.phone iframe {
+    width: 390px; height: min(844px, calc(100% - 8px)); flex: none;
+    border: 10px solid var(--v-device); border-radius: 36px;
+    box-shadow: 0 24px 48px -24px rgba(28, 35, 48, .45);
+  }
+
+  /* Clean mode: the page alone, as a visitor sees it. */
+  .restore {
+    position: fixed; right: 16px; bottom: 16px; z-index: 10; display: none;
+    align-items: center; gap: 6px; padding: 8px 12px;
+    border: 1px solid rgba(255, 255, 255, .25); border-radius: 999px;
+    background: rgba(28, 35, 48, .78); color: #fff; font: inherit; font-size: 13px; cursor: pointer;
+    opacity: .75; transition: opacity .2s;
+  }
+  .restore:hover, .restore:focus-visible, body.hint .restore { opacity: 1; }
+  .restore svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  body.clean { display: block; }
+  body.clean .side, body.clean .bar { display: none; }
+  body.clean .stage { position: fixed; inset: 0; }
+  body.clean .restore { display: inline-flex; }
+  body.clean .stage:not(.phone) iframe { height: 100vh; }
+  @media (prefers-reduced-motion: reduce) { .restore { transition: none; } }
+
+  @media (max-width: 900px) {
+    body { grid-template-columns: 1fr; grid-template-rows: auto auto 1fr; }
+    .side { grid-row: auto; max-height: 30vh; border-right: 0; border-bottom: 1px solid var(--v-line); }
+  }
+</style>
+</head>
+<body>
+<aside class="side">
+  <div class="brand"><b>New gekkocorporation.com</b><span>Preview of the rebuilt pages</span></div>
+  <nav class="list" id="list" aria-label="Pages"></nav>
+  <p class="note" id="note"></p>
+</aside>
+
+<div class="bar">
+  <h1 id="title">Home</h1>
+  <div class="seg" role="group" aria-label="Device">
+    <button type="button" id="desk" aria-pressed="true">Desktop</button>
+    <button type="button" id="phone" aria-pressed="false">Phone</button>
+  </div>
+  <div class="seg" role="group" aria-label="Theme" title="Compare the site in light and dark mode">
+    <button type="button" id="thLight" aria-pressed="true">Light</button>
+    <button type="button" id="thDark" aria-pressed="false">Dark</button>
+  </div>
+  <button class="btn" type="button" id="prev" aria-label="Previous page"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></button>
+  <button class="btn" type="button" id="next" aria-label="Next page"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
+  <a class="btn" id="live" href="#" target="_blank" rel="noopener" title="Open this page on today's live site, for before/after">Current site <svg viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+  <button class="btn btn--primary" type="button" id="hide" title="Hide the preview controls (H)"><svg viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>Hide controls</button>
+</div>
+
+<main class="stage" id="stage">
+  <iframe id="frame" title="Page preview"></iframe>
+</main>
+
+<button class="restore" type="button" id="restore" aria-label="Show preview controls"><svg viewBox="0 0 24 24"><path d="M9 4v5H4M15 4v5h5M9 20v-5H4M15 20v-5h5"/></svg>Show controls</button>
+
+<script>
+  const DATA = {"built":"2026-11-05","pages":[{"slug":"home","title":"Home","live":"https://www.gekkocorporation.com/","path":"/"},{"slug":"gekko-probe","title":"Gekko Probe","live":"https://www.gekkocorporation.com/gekko-probe","path":"/gekko-probe"},{"slug":"gekko-knowledge","title":"Gekko Knowledge","live":"https://www.gekkocorporation.com/gekko-knowledge","path":"/gekko-knowledge"},{"slug":"budtender-ai","title":"Budtender AI","live":"https://www.gekkocorporation.com/budtender-ai","path":"/budtender-ai","note":"Keep or cut: client decision"},{"slug":"about","title":"About","live":"https://www.gekkocorporation.com/about","path":"/about"},{"slug":"podcast","title":"Podcast","live":"https://www.gekkocorporation.com/podcast","path":"/podcast"},{"slug":"contact","title":"Contact","live":"https://www.gekkocorporation.com/contact","path":"/contact"}]};
+  const pages = DATA.pages;
+  const bySlug = Object.fromEntries(pages.map((p) => [p.slug, p]));
+  const order = pages.map((p) => p.slug);
+  const $ = (id) => document.getElementById(id);
+  const frame = $("frame"), stage = $("stage");
+  const store = {
+    get(k) { try { return localStorage.getItem(k); } catch { return null; } },
+    set(k, v) { try { localStorage.setItem(k, v); } catch {} },
+  };
+
+  $("list").innerHTML = pages.map((p) =>
+    `<button type="button" data-slug="${p.slug}">${p.title}${p.note ? `<small>${p.note}</small>` : ""}</button>`
+  ).join("");
+  $("note").innerHTML = `Built ${DATA.built}. Blog and legal links open the current site. Press <kbd>H</kbd> to hide or show these controls.`;
+
+  function mark(slug) {
+    const p = bySlug[slug];
+    if (!p) return;
+    document.querySelectorAll("#list button[aria-current]").forEach((b) => b.removeAttribute("aria-current"));
+    document.querySelector(`#list button[data-slug="${slug}"]`)?.setAttribute("aria-current", "page");
+    $("title").textContent = p.title;
+    $("live").href = p.live;
+    document.title = `${p.title} · New gekkocorporation.com`;
+    if (location.hash.slice(1) !== slug) history.replaceState(null, "", location.search + "#" + slug);
+  }
+
+  function show(slug) {
+    const p = bySlug[slug] || bySlug.home;
+    const src = `pages/${p.slug}.html`;
+    if (!frame.src.endsWith(src)) frame.src = src;
+    mark(p.slug);
+  }
+
+  $("list").addEventListener("click", (e) => { const b = e.target.closest("button[data-slug]"); if (b) show(b.dataset.slug); });
+  const step = (d) => {
+    const i = Math.max(0, order.indexOf(location.hash.slice(1)));
+    show(order[(i + d + order.length) % order.length]);
+  };
+  $("prev").onclick = () => step(-1);
+  $("next").onclick = () => step(1);
+
+  function device(phone) {
+    stage.classList.toggle("phone", phone);
+    $("desk").setAttribute("aria-pressed", String(!phone));
+    $("phone").setAttribute("aria-pressed", String(phone));
+    store.set("gk-preview-device", phone ? "phone" : "desk");
+  }
+  $("desk").onclick = () => device(false);
+  $("phone").onclick = () => device(true);
+
+  // Theme: the pages read the same "gk-theme" choice the live site's toggle
+  // saves, so switching here sets it and reloads the page frame.
+  function themeNow() {
+    const saved = store.get("gk-theme");
+    if (saved === "dark" || saved === "light") return saved;
+    return window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  }
+  function showTheme(t) {
+    $("thLight").setAttribute("aria-pressed", String(t === "light"));
+    $("thDark").setAttribute("aria-pressed", String(t === "dark"));
+  }
+  function theme(t) {
+    store.set("gk-theme", t);
+    showTheme(t);
+    try { frame.contentWindow.location.reload(); } catch { frame.src = frame.src; }
+  }
+  $("thLight").onclick = () => theme("light");
+  $("thDark").onclick = () => theme("dark");
+  showTheme(themeNow());
+  // The in-page toggle changes the theme too; keep the switch in sync.
+  addEventListener("storage", (e) => { if (e.key === "gk-theme") showTheme(themeNow()); });
+  frame.addEventListener("load", () => showTheme(themeNow()));
+
+  let hintTimer;
+  function clean(on) {
+    document.body.classList.toggle("clean", on);
+    clearTimeout(hintTimer);
+    document.body.classList.toggle("hint", on);
+    if (on) hintTimer = setTimeout(() => document.body.classList.remove("hint"), 2500);
+    (on ? $("restore") : $("hide")).focus({ preventScroll: true });
+  }
+  $("hide").onclick = () => clean(true);
+  $("restore").onclick = () => clean(false);
+  function onKey(key) {
+    if (key === "h" || key === "H") clean(!document.body.classList.contains("clean"));
+    else if (key === "Escape" && document.body.classList.contains("clean")) clean(false);
+  }
+  addEventListener("keydown", (e) => {
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    if (e.target.closest("input, textarea, select")) return;
+    onKey(e.key);
+  });
+
+  // Pages announce themselves and forward H / Esc (file:// frames can't be read across files).
+  addEventListener("message", (e) => {
+    if (!e.data) return;
+    if (e.data.gkPreview) mark(e.data.gkPreview);
+    if (e.data.gkKey) onKey(e.data.gkKey);
+  });
+
+  const params = new URLSearchParams(location.search);
+  device(params.get("device") === "phone" || (params.get("device") !== "desktop" && store.get("gk-preview-device") === "phone"));
+  addEventListener("hashchange", () => show(location.hash.slice(1)));
+  show(location.hash.slice(1) || "home");
+  if (params.get("clean") === "1") clean(true);
+</script>
+</body>
+</html>

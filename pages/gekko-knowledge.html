@@ -1,0 +1,785 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Gekko Knowledge · New gekkocorporation.com (preview)</title>
+<link rel="stylesheet" href="../assets/css/site.css">
+<link rel="stylesheet" href="../assets/css/code-block.css">
+<link rel="stylesheet" href="../assets/css/custom.css">
+<link rel="stylesheet" href="../assets/fonts/fonts.css">
+<script>(function () {
+try {
+var t = localStorage.getItem("gk-theme");
+if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t);
+} catch (e) {}
+})();</script>
+<style id="gk-shared">.gk{--gk-cream: #FAF9F6;--gk-paper: #FFFFFF;--gk-tan: #E9E1D8;--gk-tan-line: #DFD5C8;--gk-ink: #262626;--gk-ink-soft: #4A4A4A;--gk-ink-raised: #313131;--gk-ink-line: #444444;--gk-mist: #D0D0D0;--gk-green: #369900;--gk-green-ink: #2D7A00;--gk-green-deep: #2E8400;--gk-green-bright: #5CBF2E;--gk-green-wash: rgba(54,153,0,.09);--gk-pink: #EAC7BD;--gk-tan-faint: #F1ECE5;--gk-tan-dot: #D0C6BC;--gk-ink-deep: #242424;--gk-ink-lift: #383838;--gk-ink-edge: #555555;--gk-ink-pressed: #111111;--gk-ash: #A8A8A8;--gk-caution-line: #E2C27A;--gk-caution-ink: #8A6200;--gk-caution-wash: #FBF1DC;--gk-error-ink: #B03A28;--gk-error-wash: rgba(176,58,40,.1);--gk-ink-scrim: rgba(38,38,38,.72);--gk-font-head: "Rubik",system-ui,sans-serif;--gk-font-body: "Nunito Sans",system-ui,sans-serif;--gk-text-display: clamp(2.75rem,5.6vw,4.5rem);--gk-text-display-split: clamp(2.75rem,4.8vw,4rem);--gk-text-headline: clamp(2rem,4vw,3.25rem);--gk-text-title: clamp(1.375rem,2.2vw,1.75rem);--gk-text-statement: clamp(1.5rem,3vw,2.25rem);--gk-text-lede: clamp(1.125rem,1.6vw,1.3125rem);--gk-text-body-lg: 1.1875rem;--gk-text-body: 1.0625rem;--gk-text-compact: .9375rem;--gk-text-small: .9375rem;--gk-text-caption: .875rem;--gk-text-label: .8125rem;--gk-text-micro: .75rem;--gk-space-xs: 8px;--gk-space-sm: 16px;--gk-space-md: 24px;--gk-space-lg: 40px;--gk-space-xl: 64px;--gk-section-pad: clamp(80px,10vw,128px);--gk-gutter: clamp(20px,4vw,32px);--gk-wrap: 1160px;--gk-radius-xs: 4px;--gk-radius-sm: 6px;--gk-radius-md: 10px;--gk-radius-lg: 16px;--gk-radius-xl: 24px;--gk-shadow-object: 0 32px 64px -32px rgba(38,38,38,.22),0 2px 6px rgba(38,38,38,.05);--gk-ease-out: cubic-bezier(.16,1,.3,1);--gk-focus: var(--gk-green-ink);--gk-trail-h: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='30' viewBox='0 0 96 30'%3E%3Cg fill='black'%3E%3Cg transform='translate(24 9)'%3E%3Cg transform='rotate(90)'%3E%3Cellipse cx='0' cy='2' rx='3.4' ry='3.8'/%3E%3Cpath fill='none' stroke='black' stroke-width='1.4' stroke-linecap='round' d='M0 0L-6.5-5M0 0L-3.4-8.6M0 0L0-9.6M0 0L3.4-8.6M0 0L6.5-5'/%3E%3Ccircle cx='-6.5' cy='-5' r='1.7'/%3E%3Ccircle cx='-3.4' cy='-8.6' r='1.7'/%3E%3Ccircle cx='0' cy='-9.6' r='1.7'/%3E%3Ccircle cx='3.4' cy='-8.6' r='1.7'/%3E%3Ccircle cx='6.5' cy='-5' r='1.7'/%3E%3C/g%3E%3C/g%3E%3Cg transform='translate(72 21)'%3E%3Cg transform='rotate(90)'%3E%3Cellipse cx='0' cy='2' rx='3.4' ry='3.8'/%3E%3Cpath fill='none' stroke='black' stroke-width='1.4' stroke-linecap='round' d='M0 0L-6.5-5M0 0L-3.4-8.6M0 0L0-9.6M0 0L3.4-8.6M0 0L6.5-5'/%3E%3Ccircle cx='-6.5' cy='-5' r='1.7'/%3E%3Ccircle cx='-3.4' cy='-8.6' r='1.7'/%3E%3Ccircle cx='0' cy='-9.6' r='1.7'/%3E%3Ccircle cx='3.4' cy='-8.6' r='1.7'/%3E%3Ccircle cx='6.5' cy='-5' r='1.7'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");--gk-trail-v: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='60' viewBox='0 0 30 60'%3E%3Cg fill='black'%3E%3Cg transform='translate(9 16)'%3E%3Cg transform='rotate(180)'%3E%3Cellipse cx='0' cy='2' rx='3.4' ry='3.8'/%3E%3Cpath fill='none' stroke='black' stroke-width='1.4' stroke-linecap='round' d='M0 0L-6.5-5M0 0L-3.4-8.6M0 0L0-9.6M0 0L3.4-8.6M0 0L6.5-5'/%3E%3Ccircle cx='-6.5' cy='-5' r='1.7'/%3E%3Ccircle cx='-3.4' cy='-8.6' r='1.7'/%3E%3Ccircle cx='0' cy='-9.6' r='1.7'/%3E%3Ccircle cx='3.4' cy='-8.6' r='1.7'/%3E%3Ccircle cx='6.5' cy='-5' r='1.7'/%3E%3C/g%3E%3C/g%3E%3Cg transform='translate(21 46)'%3E%3Cg transform='rotate(180)'%3E%3Cellipse cx='0' cy='2' rx='3.4' ry='3.8'/%3E%3Cpath fill='none' stroke='black' stroke-width='1.4' stroke-linecap='round' d='M0 0L-6.5-5M0 0L-3.4-8.6M0 0L0-9.6M0 0L3.4-8.6M0 0L6.5-5'/%3E%3Ccircle cx='-6.5' cy='-5' r='1.7'/%3E%3Ccircle cx='-3.4' cy='-8.6' r='1.7'/%3E%3Ccircle cx='0' cy='-9.6' r='1.7'/%3E%3Ccircle cx='3.4' cy='-8.6' r='1.7'/%3E%3Ccircle cx='6.5' cy='-5' r='1.7'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");--gk-bg: var(--gk-cream);--gk-bg-raised: var(--gk-paper);--gk-bg-ink: var(--gk-ink);--gk-bg-green: var(--gk-green);--gk-fg: var(--gk-ink);--gk-fg-soft: var(--gk-ink-soft);--gk-line: var(--gk-tan);--gk-line-strong: var(--gk-tan-line);--gk-line-dot: var(--gk-tan-dot);--gk-tint: var(--gk-tan);--gk-tint-faint: var(--gk-tan-faint);--gk-accent-text: var(--gk-green-ink);--gk-error-text: var(--gk-error-ink);--gk-caution-text: var(--gk-caution-ink);--gk-media-dim: 1;--gk-media-sat: 1;--gk-accent-display: var(--gk-green);--gk-btn-bg: var(--gk-green);--gk-btn-bg-hover: var(--gk-green-deep);--gk-trail-on-green: var(--gk-green-deep);--gk-chip-light: var(--gk-paper);--gk-caution-bg: var(--gk-caution-wash);--gk-caution-border: var(--gk-caution-line);background: var(--gk-bg);color: var(--gk-fg);font-family: var(--gk-font-body);font-weight: 600;font-size: var(--gk-text-body);line-height: 1.6;-webkit-font-smoothing: antialiased;text-rendering: optimizeLegibility;font-kerning: normal}html[data-theme="dark"] .gk{--gk-bg: #191816;--gk-bg-raised: #22211E;--gk-bg-ink: #0F0F0E;--gk-bg-green: #2C7A00;--gk-fg: #EEEAE2;--gk-fg-soft: #B9B3A8;--gk-line: #34322E;--gk-line-strong: #46423C;--gk-line-dot: #6A645B;--gk-tint: #2B2926;--gk-tint-faint: #24221F;--gk-accent-text: #6BCB3D;--gk-error-text: #E8836F;--gk-caution-text: #E2C27A;--gk-media-dim: .72;--gk-media-sat: .85;--gk-accent-display: #5CBF2E;--gk-btn-bg: #2C7A00;--gk-btn-bg-hover: #369900;--gk-trail-on-green: rgba(0,0,0,.28);--gk-chip-light: #EEEAE2;--gk-caution-bg: rgba(226,194,122,.10);--gk-caution-border: rgba(226,194,122,.35);--gk-ink-raised: #272521;--gk-ink-line: #3A3733;--gk-ink-lift: #302E2A;--gk-ink-edge: #4A4640;--gk-ink-deep: #1C1B19;--gk-focus: #6BCB3D;--gk-shadow-object: 0 32px 64px -32px rgba(0,0,0,.7),0 2px 6px rgba(0,0,0,.3);color-scheme: dark}.gk *,.gk *::before,.gk *::after{box-sizing: border-box}.gk :where(h1,h2,h3,h4,p,ul,ol,li,figure,blockquote,dl,dd){margin: 0;padding: 0}.gk :where(ul,ol){list-style: none}.gk :where(img,svg){display: block;max-width: 100%}.gk :where(img){height: auto}.gk :where(svg){flex: none}.gk :where(b,strong){font-weight: 700}.gk ::selection{background: var(--gk-pink);color: var(--gk-ink)}.gk h1,.gk h2,.gk h3,.gk h4{font-family: var(--gk-font-head);font-weight: 500;color: inherit;text-transform: none;text-wrap: balance}.gk h1,.gk .gk-display{font-size: var(--gk-text-display);line-height: 1.05;letter-spacing: -.035em}.gk h2,.gk .gk-headline{font-size: var(--gk-text-headline);line-height: 1.1;letter-spacing: -.03em}.gk h3,.gk .gk-title{font-size: var(--gk-text-title);line-height: 1.2;letter-spacing: -.02em}.gk :where(h1,h2) em{font-style: normal;color: var(--gk-accent-display)}.gk .gk-lede{font-size: var(--gk-text-lede);line-height: 1.6;max-width: 62ch;color: var(--gk-fg-soft);text-wrap: pretty}.gk p{max-width: 68ch;text-wrap: pretty}.gk :where(li,dd,figcaption){text-wrap: pretty}.gk .gk-label{font-family: var(--gk-font-head);font-weight: 500;font-size: var(--gk-text-caption);line-height: 1.3;letter-spacing: 0}.gk a{color: var(--gk-accent-text);text-decoration-thickness: 1px;text-underline-offset: .2em}.gk a:hover{text-decoration-thickness: 2px}.gk :focus-visible{outline: 3px solid var(--gk-focus);outline-offset: 3px;border-radius: var(--gk-radius-xs)}.gk .gk-wrap{width: 100%;max-width: var(--gk-wrap);margin-inline: auto;padding-inline: var(--gk-gutter)}.gk .gk-section{padding-block: var(--gk-section-pad)}.gk .gk-section--cream{background: var(--gk-bg);color: var(--gk-fg)}.gk .gk-section--ink{--gk-focus: var(--gk-pink);background: var(--gk-bg-ink);color: var(--gk-cream)}.gk .gk-section--ink .gk-lede,.gk .gk-section--ink p{color: var(--gk-mist)}.gk .gk-section--ink a:not(.gk-btn){color: var(--gk-green-bright)}.gk .gk-section--ink .gk-btn--secondary{background: transparent;color: var(--gk-cream);border-color: var(--gk-ink-edge)}.gk .gk-section--ink .gk-btn--secondary:hover{border-color: var(--gk-pink);color: var(--gk-pink)}.gk .gk-section--ink :where(h1,h2) em{color: var(--gk-green-bright)}.gk .gk-section--green{--gk-focus: var(--gk-ink);background: var(--gk-bg-green);color: var(--gk-cream)}.gk .gk-section--green a:not(.gk-btn){color: var(--gk-cream);font-weight: 700}.gk .gk-cta{position: relative;overflow: hidden}.gk .gk-cta .gk-wrap{position: relative;z-index: 1}.gk .gk-cta h2{max-width: 22ch}.gk .gk-cta-line{max-width: 36ch;margin-top: 20px;font-family: var(--gk-font-head);font-weight: 500;font-size: var(--gk-text-statement);line-height: 1.3;letter-spacing: -.02em;color: var(--gk-cream)}.gk .gk-cta-direct{max-width: none;margin-top: 24px;font-size: 1.5rem;line-height: 1.4;font-weight: 700;color: var(--gk-cream)}.gk .gk-cta-direct a{white-space: nowrap;text-decoration-thickness: 2px}.gk .gk-cta .gk-btn--secondary{background: transparent;color: var(--gk-cream);border-color: var(--gk-cream)}.gk .gk-cta .gk-btn--secondary:hover{background: var(--gk-cream);color: var(--gk-ink)}.gk .gk-cta::after{content: "";position: absolute;right: -24px;bottom: 12%;width: min(44vw,560px);height: 30px;background-color: var(--gk-trail-on-green);-webkit-mask: var(--gk-trail-h) space no-repeat 0 50% / auto 100%;mask: var(--gk-trail-h) space no-repeat 0 50% / auto 100%;transform: rotate(174deg);transform-origin: center;pointer-events: none}@media (max-width: 860px){.gk .gk-cta::after{display: none}}.gk .gk-stack>* + *{margin-top: var(--gk-space-md)}.gk .gk-actions{display: flex;flex-wrap: wrap;gap: 14px;margin-top: var(--gk-space-lg)}.gk .gk-btn{display: inline-flex;align-items: center;justify-content: center;gap: 10px;min-height: 56px;padding: 16px 28px;border: 1px solid transparent;border-radius: var(--gk-radius-md);font-family: var(--gk-font-body);font-weight: 700;font-size: 1.1875rem;line-height: 1.2;text-decoration: none;white-space: nowrap;cursor: pointer;transition: background-color .2s var(--gk-ease-out),border-color .2s var(--gk-ease-out),color .2s var(--gk-ease-out)}.gk .gk-btn svg{width: 20px;height: 20px;transition: transform .25s var(--gk-ease-out)}.gk .gk-btn:hover svg{transform: translateX(3px)}.gk .gk-btn--primary{background: var(--gk-btn-bg);color: var(--gk-cream)}.gk .gk-btn--primary:hover{background: var(--gk-btn-bg-hover)}.gk .gk-btn--secondary{background: var(--gk-bg-raised);color: var(--gk-fg);border-color: var(--gk-line)}.gk .gk-btn--secondary:hover{border-color: var(--gk-accent-text);color: var(--gk-accent-text)}.gk .gk-section--green .gk-btn--primary,.gk .gk-btn--ink{background: var(--gk-ink);color: var(--gk-cream)}.gk .gk-section--green .gk-btn--primary:hover,.gk .gk-btn--ink:hover{background: var(--gk-ink-pressed)}.gk .gk-chips{display: flex;flex-wrap: wrap;gap: 10px}.gk .gk-chip{display: inline-flex;align-items: center;gap: 8px;padding: 9px 16px;border: 1px solid var(--gk-line);border-radius: 999px;background: var(--gk-bg-raised);font-family: var(--gk-font-head);font-weight: 500;font-size: .875rem;line-height: 1.3}.gk .gk-chip::before{content: "";width: 6px;height: 6px;border-radius: 50%;background: var(--gk-green)}.gk .gk-panel{padding: 28px;border: 1px solid var(--gk-line);border-radius: var(--gk-radius-lg);background: var(--gk-bg-raised)}.gk .gk-section--ink .gk-panel{border-color: var(--gk-ink-line);background: var(--gk-ink-raised)}.gk .gk-trail{display: block;height: 30px;color: var(--gk-line-dot);background-color: currentColor;-webkit-mask: var(--gk-trail-h) space no-repeat 0 50% / auto 100%;mask: var(--gk-trail-h) space no-repeat 0 50% / auto 100%}.gk .gk-trail--v{width: 30px;height: auto;-webkit-mask: var(--gk-trail-v) no-repeat space 50% 0 / 100% auto;mask: var(--gk-trail-v) no-repeat space 50% 0 / 100% auto}.gk .gk-section--ink .gk-trail{color: var(--gk-green-bright)}.gk .gk-section--green .gk-trail{color: var(--gk-trail-on-green)}.gk .gk-icon{width: 24px;height: 24px;fill: none;stroke: currentColor;stroke-width: 1.8;stroke-linecap: round;stroke-linejoin: round}.gk .gk-example-note{font-size: var(--gk-text-small);color: var(--gk-fg-soft);margin-top: 14px}.gk .gk-visually-hidden{position: absolute !important;width: 1px;height: 1px;overflow: hidden;clip: rect(0 0 0 0);clip-path: inset(50%);white-space: nowrap}@media (max-width: 600px){.gk .gk-btn{width: 100%;white-space: normal;text-align: center}}section.page-section:has(.gk){padding-bottom: 0 !important;min-height: 0 !important}section.page-section:has(.gk){padding-top: 0 !important}section.page-section:first-child:has(.gk){padding-top: var(--header-height,0px) !important}section.page-section:has(.gk)>.content-wrapper{padding-top: 0 !important;padding-bottom: 0 !important;max-width: none !important}section.page-section:has(.gk) .fe-block:has(.gk){grid-area: 1 / 1 / -1 / -1 !important}section.page-section:has(.gk) .sqs-block:has(.gk){padding: 0 !important}section.page-section:has(.gk) .sqs-block-content:has(.gk){overflow: visible !important;height: auto !important}.gk [hidden]{display: none !important}.gk [id]{scroll-margin-top: calc(var(--header-height,80px) + 24px)}@media (prefers-reduced-motion: reduce){.gk *,.gk *::before,.gk *::after{transition-duration: .01ms !important;animation-duration: .01ms !important;animation-iteration-count: 1 !important}}@media (prefers-color-scheme: dark){html:not([data-theme="light"]) .gk{--gk-bg: #191816;--gk-bg-raised: #22211E;--gk-bg-ink: #0F0F0E;--gk-bg-green: #2C7A00;--gk-fg: #EEEAE2;--gk-fg-soft: #B9B3A8;--gk-line: #34322E;--gk-line-strong: #46423C;--gk-line-dot: #6A645B;--gk-tint: #2B2926;--gk-tint-faint: #24221F;--gk-accent-text: #6BCB3D;--gk-error-text: #E8836F;--gk-caution-text: #E2C27A;--gk-media-dim: .72;--gk-media-sat: .85;--gk-accent-display: #5CBF2E;--gk-btn-bg: #2C7A00;--gk-btn-bg-hover: #369900;--gk-trail-on-green: rgba(0,0,0,.28);--gk-chip-light: #EEEAE2;--gk-caution-bg: rgba(226,194,122,.10);--gk-caution-border: rgba(226,194,122,.35);--gk-ink-raised: #272521;--gk-ink-line: #3A3733;--gk-ink-lift: #302E2A;--gk-ink-edge: #4A4640;--gk-ink-deep: #1C1B19;--gk-focus: #6BCB3D;--gk-shadow-object: 0 32px 64px -32px rgba(0,0,0,.7),0 2px 6px rgba(0,0,0,.3);color-scheme: dark}}</style>
+<style id="gk-theme">html[data-theme="dark"]{--white-hsl: 40,6.4%,9.2%;--black-hsl: 40,26%,91%;--lightAccent-hsl: 36,6.2%,15.9%;--sqsp-palette-lightest-color: hsla(40,6.4%,9.2%,1);--sqsp-palette-darkest-color: hsla(40,26%,91%,1);color-scheme: dark;background: #191816}html[data-theme="dark"] :is([data-section-theme="black"],[data-section-theme="black-bold"],[data-section-theme="dark"],[data-section-theme="dark-bold"]){--white-hsl: 45,28.57%,97.25%;--black-hsl: 0,0%,14.9%;--lightAccent-hsl: 31.76,27.87%,88.04%}.gk-theme-toggle{display: inline-grid;place-items: center;width: 44px;height: 44px;margin: 0 8px;padding: 0;border: 1px solid hsla(var(--black-hsl,0,0%,14.9%),.25);border-radius: 50%;background: transparent;color: hsla(var(--black-hsl,0,0%,14.9%),1);cursor: pointer;transition: border-color .2s ease,color .2s ease}.gk-theme-toggle:hover{border-color: currentColor}.gk-theme-toggle:focus-visible{outline: 3px solid #2D7A00;outline-offset: 3px}html[data-theme="dark"] .gk-theme-toggle:focus-visible{outline-color: #6BCB3D}.gk-theme-toggle svg{width: 20px;height: 20px;fill: none;stroke: currentColor;stroke-width: 1.8;stroke-linecap: round;stroke-linejoin: round}.gk-theme-toggle .gk-t-sun{display: none}html[data-theme="dark"] .gk-theme-toggle .gk-t-sun{display: block}html[data-theme="dark"] .gk-theme-toggle .gk-t-moon{display: none}.gk-theme-toggle--float{position: fixed;left: 16px;bottom: 16px;z-index: 9999;margin: 0;background: hsla(var(--white-hsl,45,28.57%,97.25%),.92);box-shadow: 0 8px 24px -12px rgba(0,0,0,.4)}@media (prefers-reduced-motion: reduce){.gk-theme-toggle{transition: none}}@media (prefers-color-scheme: dark){html:not([data-theme="light"]){--white-hsl: 40,6.4%,9.2%;--black-hsl: 40,26%,91%;--lightAccent-hsl: 36,6.2%,15.9%;--sqsp-palette-lightest-color: hsla(40,6.4%,9.2%,1);--sqsp-palette-darkest-color: hsla(40,26%,91%,1);color-scheme: dark;background: #191816}html:not([data-theme="light"]) :is([data-section-theme="black"],[data-section-theme="black-bold"],[data-section-theme="dark"],[data-section-theme="dark-bold"]){--white-hsl: 45,28.57%,97.25%;--black-hsl: 0,0%,14.9%;--lightAccent-hsl: 31.76,27.87%,88.04%}html:not([data-theme="light"]) .gk-theme-toggle:focus-visible{outline-color: #6BCB3D}html:not([data-theme="light"]) .gk-theme-toggle .gk-t-sun{display: block}html:not([data-theme="light"]) .gk-theme-toggle .gk-t-moon{display: none}}</style>
+<style id="gk-native">:root{--gkn-accent: #369900;--gkn-accent-hover: #2E8400;--gkn-accent-text: #2D7A00;--gkn-on-accent: #FAF9F6;--gkn-line: #E9E1D8;--gkn-field: #FFFFFF;--gkn-select-bg: #EAC7BD;--gkn-select-text: #262626}html[data-theme="dark"]{--gkn-accent: #2C7A00;--gkn-accent-hover: #369900;--gkn-accent-text: #6BCB3D;--gkn-on-accent: #FAF9F6;--gkn-line: #34322E;--gkn-field: #22211E}::selection{background: var(--gkn-select-bg);color: var(--gkn-select-text)}:focus-visible{outline: 3px solid var(--gkn-accent-text);outline-offset: 3px}:is(.sqs-html-content,.blog-item-title,.blog-title,.entry-title) :is(h1,h2,h3,h4),.blog-item-title,.blog-title a,.entry-title a{font-family: "Rubik",system-ui,sans-serif;font-weight: 500;letter-spacing: -.02em;color: hsla(var(--black-hsl),1);text-wrap: balance}.header-actions-action--cta .btn{border-radius: 10px !important;border-color: var(--gkn-accent-text) !important;color: var(--gkn-accent-text) !important;background: transparent !important;font-family: "Nunito Sans",system-ui,sans-serif !important;font-weight: 700 !important;font-size: 1.0625rem !important;line-height: 1.2 !important;padding: 12px 22px !important;text-transform: none !important;letter-spacing: 0 !important;transition: background-color .2s,color .2s}.header-actions-action--cta .btn:hover{background: var(--gkn-accent-text) !important;color: hsla(var(--white-hsl),1) !important;opacity: 1 !important}.sqs-html-content a:not(.sqs-button-element--primary):not(.btn){color: var(--gkn-accent-text);text-decoration-thickness: 1px;text-underline-offset: .2em}.sqs-html-content a:not(.sqs-button-element--primary):not(.btn):hover{text-decoration-thickness: 2px}.blog-more-link,.blog-item-meta a,.blog-categories-list a{color: var(--gkn-accent-text) !important}.blog-more-link{font-weight: 700;text-decoration: none}.blog-more-link:hover{text-decoration: underline;text-underline-offset: .2em}.blog-title a:hover{color: var(--gkn-accent-text)}.blog-image-wrapper img,.blog-basic-grid img{border-radius: 16px}.blog-item-top-wrapper,.blog-item-content-wrapper,.blog-item-author-profile-wrapper{max-width: 760px;margin-left: auto !important;margin-right: auto !important}.blog-item-content .sqs-html-content p,.blog-item-content .sqs-html-content li{max-width: 34em;font-size: 1.125rem;line-height: 1.7}.blog-item-content .sqs-html-content h2,.blog-item-content .sqs-html-content h3{margin-top: 1.6em}.blog-item-content .sqs-html-content hr{border: 0;border-top: 1px solid var(--gkn-line)}.blog-item-content img{border-radius: 16px}.page-section .sqs-html-content :is(p,li){max-width: 36em}@media (max-width: 767px){section.page-section:not(:has(.gk))>.content-wrapper{padding-left: max(16px,var(--sqs-mobile-site-gutter,6vw)) !important;padding-right: max(16px,var(--sqs-mobile-site-gutter,6vw)) !important}}:is(.form-wrapper,.newsletter-form) :is(input[type="text"],input[type="email"],input[type="tel"],textarea,select){border: 1px solid var(--gkn-line) !important;border-radius: 10px !important;background: var(--gkn-field) !important;color: hsla(var(--black-hsl),1) !important;font-family: "Nunito Sans",system-ui,sans-serif !important;font-size: 1rem !important;padding: 12px 14px !important}:is(.form-wrapper,.newsletter-form) :is(input,textarea,select):focus-visible{outline: 3px solid var(--gkn-accent-text);outline-offset: 2px}:is(.form-wrapper,.newsletter-form) :is(.title,label,legend){font-family: "Nunito Sans",system-ui,sans-serif;font-weight: 600}:is(.form-wrapper .form-button-wrapper,.newsletter-form-button-wrapper) button,.form-wrapper button[type="submit"]{border: 0 !important;border-radius: 10px !important;background: var(--gkn-accent) !important;color: var(--gkn-on-accent) !important;font-family: "Nunito Sans",system-ui,sans-serif !important;font-weight: 700 !important;font-size: 1.1875rem !important;text-transform: none !important;letter-spacing: 0 !important;padding: 16px 28px !important}:is(.form-wrapper .form-button-wrapper,.newsletter-form-button-wrapper) button:hover,.form-wrapper button[type="submit"]:hover{background: var(--gkn-accent-hover) !important}footer.sections a:not(.btn),#footer-sections a:not(.btn){text-decoration-thickness: 1px;text-underline-offset: .2em}footer.sections a:not(.btn):hover,#footer-sections a:not(.btn):hover{color: var(--gkn-accent-text)}@media (prefers-color-scheme: dark){html:not([data-theme="light"]){--gkn-accent: #2C7A00;--gkn-accent-hover: #369900;--gkn-accent-text: #6BCB3D;--gkn-on-accent: #FAF9F6;--gkn-line: #34322E;--gkn-field: #22211E}}</style>
+<style>body{margin:0;background:hsla(var(--white-hsl),1)}</style>
+</head><body class="primary-button-style-solid primary-button-shape-pill secondary-button-style-outline secondary-button-shape-pill tertiary-button-style-outline tertiary-button-shape-underline form-field-style-solid form-field-shape-square form-field-border-bottom form-field-hover-focus-opacity form-field-checkbox-type-icon form-field-checkbox-fill-outline form-field-checkbox-color-inverted form-field-checkbox-shape-square form-field-checkbox-layout-stack form-field-radio-type-icon form-field-radio-fill-outline form-field-radio-color-inverted form-field-radio-shape-square form-field-radio-layout-stack form-field-survey-fill-outline form-field-survey-color-inverted form-field-survey-shape-square form-submit-button-style-bar tweak-global-animations-animation-type-none tweak-global-animations-animation-curve-ease image-block-poster-text-alignment-center image-block-card-content-position-center image-block-card-text-alignment-left image-block-overlap-content-position-center image-block-overlap-text-alignment-left image-block-collage-content-position-top image-block-collage-text-alignment-left image-block-stack-text-alignment-left tweak-blog-alternating-side-by-side-width-full tweak-blog-alternating-side-by-side-image-aspect-ratio-11-square tweak-blog-alternating-side-by-side-text-alignment-left tweak-blog-alternating-side-by-side-read-more-style-show tweak-blog-alternating-side-by-side-image-text-alignment-middle tweak-blog-alternating-side-by-side-delimiter-bullet tweak-blog-alternating-side-by-side-meta-position-top tweak-blog-alternating-side-by-side-primary-meta-categories tweak-blog-alternating-side-by-side-secondary-meta-date tweak-blog-alternating-side-by-side-excerpt-show form-use-theme-colors tweak-global-animations-complexity-level-detailed tweak-global-animations-animation-style-fade tweak-blog-masonry-width-full tweak-blog-masonry-text-alignment-left tweak-blog-masonry-primary-meta-categories tweak-blog-masonry-secondary-meta-date tweak-blog-masonry-meta-position-top tweak-blog-masonry-read-more-style-show tweak-blog-masonry-delimiter-space tweak-blog-masonry-image-placement-above tweak-blog-masonry-excerpt-show tweak-portfolio-grid-overlay-width-full tweak-portfolio-grid-overlay-height-large tweak-portfolio-grid-overlay-image-aspect-ratio-11-square tweak-portfolio-grid-overlay-text-placement-center tweak-portfolio-grid-overlay-show-text-after-hover tweak-blog-single-column-width-full tweak-blog-single-column-text-alignment-left tweak-blog-single-column-image-placement-above tweak-blog-single-column-delimiter-bullet tweak-blog-single-column-read-more-style-hide tweak-blog-single-column-primary-meta-date tweak-blog-single-column-secondary-meta-none tweak-blog-single-column-meta-position-top tweak-blog-single-column-content-full-post header-width-full tweak-fixed-header tweak-fixed-header-style-basic tweak-blog-item-width-medium tweak-blog-item-text-alignment-center tweak-blog-item-meta-position-above-title tweak-blog-item-show-date tweak-blog-item-delimiter-bullet tweak-blog-side-by-side-width-inset tweak-blog-side-by-side-image-placement-left tweak-blog-side-by-side-image-aspect-ratio-11-square tweak-blog-side-by-side-primary-meta-categories tweak-blog-side-by-side-secondary-meta-date tweak-blog-side-by-side-meta-position-top tweak-blog-side-by-side-text-alignment-left tweak-blog-side-by-side-image-text-alignment-middle tweak-blog-side-by-side-read-more-style-show tweak-blog-side-by-side-delimiter-bullet tweak-blog-side-by-side-excerpt-show tweak-events-stacked-width-full tweak-events-stacked-height-large tweak-events-stacked-show-past-events tweak-events-stacked-show-thumbnails tweak-events-stacked-thumbnail-size-32-standard tweak-events-stacked-date-style-side-tag tweak-events-stacked-show-time tweak-events-stacked-show-location tweak-events-stacked-show-excerpt tweak-blog-basic-grid-width-inset tweak-blog-basic-grid-image-aspect-ratio-32-standard tweak-blog-basic-grid-text-alignment-center tweak-blog-basic-grid-delimiter-bullet tweak-blog-basic-grid-image-placement-above tweak-blog-basic-grid-read-more-style-show tweak-blog-basic-grid-primary-meta-categories tweak-blog-basic-grid-secondary-meta-date tweak-blog-basic-grid-excerpt-show tweak-portfolio-grid-basic-width-full tweak-portfolio-grid-basic-height-large tweak-portfolio-grid-basic-image-aspect-ratio-11-square tweak-portfolio-grid-basic-text-alignment-left tweak-portfolio-grid-basic-hover-effect-fade header-overlay-alignment-center tweak-portfolio-index-background-link-format-stacked tweak-portfolio-index-background-width-full tweak-portfolio-index-background-height-large tweak-portfolio-index-background-vertical-alignment-middle tweak-portfolio-index-background-horizontal-alignment-center tweak-portfolio-index-background-delimiter-none tweak-portfolio-index-background-animation-type-fade tweak-portfolio-index-background-animation-duration-medium tweak-portfolio-hover-follow-layout-inline tweak-portfolio-hover-follow-delimiter-bullet tweak-portfolio-hover-follow-animation-type-fade tweak-portfolio-hover-follow-animation-duration-fast tweak-portfolio-hover-static-layout-inline tweak-portfolio-hover-static-front tweak-portfolio-hover-static-delimiter-hyphen tweak-portfolio-hover-static-animation-type-fade tweak-portfolio-hover-static-animation-duration-fast hide-opentable-icons opentable-style-dark tweak-product-quick-view-button-style-floating tweak-product-quick-view-button-position-bottom tweak-product-quick-view-lightbox-excerpt-display-truncate tweak-product-quick-view-lightbox-show-arrows tweak-product-quick-view-lightbox-show-close-button tweak-product-quick-view-lightbox-controls-weight-light native-currency-code-usd collection-type-page collection-6ac320e24a317031e82e2439 collection-layout-default mobile-style-available sqs-seven-one has-banner-image general-page">
+<style>
+  .pv-header, .pv-footer { font-family: "Nunito Sans", system-ui, sans-serif; font-weight: 600; color: hsla(var(--black-hsl), 1); }
+  .pv-header {
+    position: sticky; top: 0; z-index: 50;
+    display: flex; align-items: center; justify-content: space-between; gap: 24px;
+    padding: 14px clamp(20px, 4vw, 48px);
+    background: hsla(var(--white-hsl), .96);
+    border-bottom: 1px solid hsla(var(--lightAccent-hsl), 1);
+  }
+  .pv-logo img { display: block; height: 52px; width: auto; }
+  .pv-nav { display: flex; align-items: center; gap: clamp(16px, 2.4vw, 32px); }
+  .pv-nav > a, .pv-menu > summary { color: hsla(var(--black-hsl), 1); text-decoration: none; font-size: 1rem; cursor: pointer; }
+  .pv-nav > a:hover, .pv-menu > summary:hover { color: #2D7A00; }
+  .pv-menu { position: relative; }
+  .pv-menu > summary { list-style: none; display: inline-flex; align-items: center; gap: 6px; }
+  .pv-menu > summary::-webkit-details-marker { display: none; }
+  .pv-menu > summary::after { content: ""; width: 7px; height: 7px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: translateY(-2px) rotate(45deg); }
+  .pv-menu-list {
+    position: absolute; top: calc(100% + 12px); left: -16px; min-width: 210px;
+    padding: 8px; border: 1px solid hsla(var(--lightAccent-hsl), 1); border-radius: 10px; background: hsla(var(--lightAccent-hsl), 1);
+    box-shadow: 0 16px 32px -16px rgba(38, 38, 38, .25);
+  }
+  .pv-menu-list a { display: block; padding: 10px 12px; border-radius: 6px; color: hsla(var(--black-hsl), 1); text-decoration: none; }
+  .pv-menu-list a:hover { background: hsla(var(--white-hsl), 1); color: #2D7A00; }
+  .pv-cta {
+    padding: 12px 22px; border: 2px solid #2D7A00; border-radius: 10px;
+    color: #2D7A00; font-weight: 700; text-decoration: none;
+  }
+  .pv-cta:hover { background: #2D7A00; color: hsla(var(--white-hsl), 1); }
+  .pv-burger { display: none; }
+
+  .pv-footer { padding: clamp(48px, 6vw, 72px) clamp(20px, 4vw, 48px) 32px; border-top: 1px solid hsla(var(--lightAccent-hsl), 1); background: hsla(var(--white-hsl), 1); }
+  .pv-footer-grid { display: grid; grid-template-columns: 1.4fr repeat(3, 1fr); gap: 32px; max-width: 1160px; margin: 0 auto; }
+  .pv-footer h2 { margin: 0 0 14px; font-family: Rubik, system-ui, sans-serif; font-weight: 500; font-size: 1.0625rem; letter-spacing: 0; color: hsla(var(--black-hsl), 1); }
+  .pv-footer ul { margin: 0; padding: 0; list-style: none; }
+  .pv-footer li { padding: 5px 0; }
+  .pv-footer a { color: #4A4A4A; text-decoration: none; }
+  .pv-footer a:hover { color: #2D7A00; text-decoration: underline; text-underline-offset: .2em; }
+  .pv-footer address { font-style: normal; color: #4A4A4A; line-height: 1.7; }
+  .pv-social { display: flex; gap: 14px; margin-top: 16px; }
+  .pv-social a { display: grid; place-items: center; width: 38px; height: 38px; border: 1px solid hsla(var(--lightAccent-hsl), 1); border-radius: 50%; }
+  .pv-social svg { width: 18px; height: 18px; fill: hsla(var(--black-hsl), 1); }
+  .pv-footer-base { max-width: 1160px; margin: 40px auto 0; padding-top: 20px; border-top: 1px solid hsla(var(--lightAccent-hsl), 1); display: flex; justify-content: space-between; gap: 16px; font-size: .875rem; color: #4A4A4A; }
+
+  @media (max-width: 860px) {
+    .pv-nav { display: none; }
+    .pv-burger { display: block; position: relative; }
+    .pv-burger > summary { list-style: none; cursor: pointer; padding: 10px 14px; border: 1px solid hsla(var(--lightAccent-hsl), 1); border-radius: 10px; }
+    .pv-burger > summary::-webkit-details-marker { display: none; }
+    .pv-burger[open] .pv-burger-list { display: grid; }
+    .pv-burger-list { display: none; position: absolute; right: 0; top: calc(100% + 10px); width: min(84vw, 300px); padding: 10px; gap: 2px; border: 1px solid hsla(var(--lightAccent-hsl), 1); border-radius: 10px; background: hsla(var(--white-hsl), 1); box-shadow: 0 16px 32px -16px rgba(38, 38, 38, .25); }
+    .pv-burger-list a { padding: 12px; border-radius: 6px; color: hsla(var(--black-hsl), 1); text-decoration: none; }
+    .pv-burger-list a:hover { background: hsla(var(--lightAccent-hsl), 1); }
+    .pv-footer-grid { grid-template-columns: 1fr 1fr; }
+    .pv-footer-base { flex-direction: column; }
+  }
+  .pv-mobile-slot { display: none; margin-left: auto; }
+  @media (max-width: 860px) { .pv-mobile-slot { display: block; } }
+  /* Field Green is too dark on the dark ground: use Night Green there. */
+  html[data-theme="dark"] :is(.pv-cta, .pv-nav > a:hover, .pv-menu > summary:hover, .pv-menu-list a:hover) { color: #6BCB3D; border-color: #6BCB3D; }
+  @media (prefers-color-scheme: dark) { html:not([data-theme="light"]) :is(.pv-cta, .pv-nav > a:hover, .pv-menu > summary:hover, .pv-menu-list a:hover) { color: #6BCB3D; border-color: #6BCB3D; } }
+  html[data-theme="dark"] .pv-cta:hover { background: #6BCB3D; color: #191816; }
+  @media (prefers-color-scheme: dark) { html:not([data-theme="light"]) .pv-cta:hover { background: #6BCB3D; color: #191816; } }
+</style>
+<header class="pv-header">
+  <a class="pv-logo" href="home.html"><img src="../assets/img/logo.png" alt="Gekko Corporation"></a>
+  <nav class="pv-nav" aria-label="Main">
+    <a href="about.html">About</a>
+    <details class="pv-menu"><summary>Services</summary>
+      <div class="pv-menu-list"><a href="gekko-probe.html">Gekko Probe</a><a href="gekko-knowledge.html">Gekko Knowledge</a><a href="budtender-ai.html">Budtender AI</a></div>
+    </details>
+    <details class="pv-menu"><summary>Social</summary>
+      <div class="pv-menu-list"><a href="https://www.gekkocorporation.com/blog" target="_blank" rel="noopener">Blog</a><a href="podcast.html">Podcast</a></div>
+    </details>
+    <a class="pv-cta" href="contact.html">Contact</a>
+    <span data-gk-theme-slot></span>
+  </nav>
+  <span class="pv-mobile-slot" data-gk-theme-slot></span>
+  <details class="pv-burger"><summary>Menu</summary>
+    <nav class="pv-burger-list" aria-label="Main">
+      <a href="home.html">Home</a><a href="gekko-probe.html">Gekko Probe</a><a href="gekko-knowledge.html">Gekko Knowledge</a><a href="budtender-ai.html">Budtender AI</a>
+      <a href="about.html">About</a><a href="https://www.gekkocorporation.com/blog" target="_blank" rel="noopener">Blog</a><a href="podcast.html">Podcast</a><a href="contact.html">Contact</a>
+    </nav>
+  </details>
+</header>
+
+<main id="page"><article class="sections">
+<!-- Same wrapper chain as the live page, including the .sqs-code-container Squarespace adds at runtime -->
+<section class="page-section full-bleed-section layout-engine-section background-width--full-bleed section-height--medium content-width--wide horizontal-alignment--center vertical-alignment--middle">
+<div class="content-wrapper"><div class="content"><div class="fluid-engine"><div class="fe-block">
+<div class="sqs-block website-component-block sqs-block-website-component sqs-block-code code-block"><div class="sqs-block-content"><div class="sqs-code-container">
+<!--
+  /gekko-knowledge — Squarespace Code Block
+  Requires the shared design system in Code Injection > Header
+  (dist/code-injection-header.html). See docs/SQUARESPACE.md.
+  All rules are scoped under .gk-knowledge; class names use the kn- prefix
+  so nothing collides with Squarespace's own markup.
+-->
+<div class="gk gk-knowledge">
+<style>
+  /* Hero */
+  .gk-knowledge .kn-hero { padding-block: clamp(48px, 7vw, 96px) clamp(24px, 4vw, 48px); /* next section is also cream; avoid doubled padding */ }
+  .gk-knowledge .kn-hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    gap: clamp(40px, 5vw, 72px);
+    align-items: center;
+  }
+  .gk-knowledge .kn-hero h1 { max-width: 13ch; margin-bottom: var(--gk-space-md); font-size: var(--gk-text-display-split); }
+  .gk-knowledge .kn-hero .gk-lede { font-size: var(--gk-text-lede); max-width: 40ch; }
+  .gk-knowledge .kn-hero .gk-lede strong { color: var(--gk-fg); font-weight: 700; }
+
+  /* Product mock: the one object on the page */
+  .gk-knowledge .kn-mock {
+    background: var(--gk-bg-raised);
+    border: 1px solid var(--gk-line);
+    border-radius: var(--gk-radius-xl);
+    box-shadow: var(--gk-shadow-object);
+    overflow: hidden;
+  }
+  .gk-knowledge .kn-mock-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 20px;
+    background: var(--gk-tint);
+    font-family: var(--gk-font-head);
+    font-weight: 500;
+    font-size: var(--gk-text-label);
+    color: var(--gk-fg-soft);
+  }
+  .gk-knowledge .kn-mock-bar i { width: 10px; height: 10px; border-radius: 50%; background: var(--gk-line-dot); }
+  .gk-knowledge .kn-mock-bar span { margin-left: 6px; letter-spacing: .04em; }
+  .gk-knowledge .kn-mock-body { padding: 24px; display: flex; flex-direction: column; gap: 18px; }
+  .gk-knowledge .kn-q {
+    align-self: flex-end;
+    max-width: 88%;
+    padding: 14px 18px;
+    background: var(--gk-tint);
+    border: 1px solid var(--gk-line-strong);
+    border-radius: var(--gk-radius-lg) var(--gk-radius-lg) var(--gk-radius-xs) var(--gk-radius-lg);
+    font-size: var(--gk-text-compact);
+  }
+  .gk-knowledge .kn-a-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    font-size: var(--gk-text-caption);
+    color: var(--gk-fg-soft);
+  }
+  .gk-knowledge .kn-a-head .kn-tick {
+    display: grid;
+    place-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: var(--gk-radius-sm);
+    background: var(--gk-green);
+    color: var(--gk-cream);
+  }
+  .gk-knowledge .kn-a-head .gk-icon { width: 14px; height: 14px; stroke-width: 2.4; }
+  .gk-knowledge .kn-recs { display: flex; flex-direction: column; gap: 8px; }
+  .gk-knowledge .kn-rec {
+    display: grid;
+    grid-template-columns: 52px 1fr auto;
+    gap: 12px;
+    align-items: center;
+    padding: 12px 14px;
+    border: 1px solid var(--gk-line);
+    border-radius: var(--gk-radius-md);
+  }
+  .gk-knowledge .kn-rec-type {
+    justify-self: start;
+    padding: 4px 8px;
+    border-radius: var(--gk-radius-sm);
+    background: var(--gk-green-wash);
+    color: var(--gk-accent-text);
+    font-family: var(--gk-font-head);
+    font-weight: 500;
+    font-size: var(--gk-text-micro);
+  }
+  .gk-knowledge .kn-rec-title { font-size: var(--gk-text-caption); line-height: 1.4; }
+  .gk-knowledge .kn-rec-title small { display: block; margin-top: 2px; font-size: var(--gk-text-micro); color: var(--gk-fg-soft); }
+  .gk-knowledge .kn-rec-match {
+    font-family: var(--gk-font-head);
+    font-weight: 500;
+    font-size: var(--gk-text-micro);
+    color: var(--gk-accent-text);
+    white-space: nowrap;
+  }
+  .gk-knowledge .kn-caveat {
+    display: flex;
+    gap: 12px;
+    align-items: baseline;
+    padding: 12px 14px;
+    border: 1px dashed var(--gk-caution-border);
+    border-radius: var(--gk-radius-md);
+    background: var(--gk-caution-bg);
+    color: var(--gk-caution-text);
+    font-size: var(--gk-text-label);
+  }
+  .gk-knowledge .kn-caveat b { font-family: var(--gk-font-head); font-weight: 500; font-size: var(--gk-text-caption); }
+  .gk-knowledge .kn-mock-caption { margin-top: 14px; font-size: var(--gk-text-caption); color: var(--gk-fg-soft); text-align: center; }
+
+  /* Problem */
+  .gk-knowledge .kn-problem-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(32px, 5vw, 64px);
+    align-items: end;
+  }
+  .gk-knowledge .kn-problem-top .gk-chips { margin-top: 28px; }
+  .gk-knowledge .kn-restart {
+    margin-top: clamp(64px, 8vw, 96px);
+    padding-top: 48px;
+    border-top: 1px solid var(--gk-line);
+  }
+  .gk-knowledge .kn-restart h3 { margin-bottom: 28px; }
+  .gk-knowledge .kn-steps { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--gk-line); border-bottom: 1px solid var(--gk-line); }
+  .gk-knowledge .kn-step { display: flex; align-items: center; gap: 14px; padding: 22px 20px 22px 0; }
+  .gk-knowledge .kn-step + .kn-step { padding-left: 20px; border-left: 1px solid var(--gk-line); }
+  .gk-knowledge .kn-step .gk-icon { color: var(--gk-green); }
+  .gk-knowledge .kn-step p { font-size: var(--gk-text-body-lg); line-height: 1.35; }
+  .gk-knowledge .kn-loopnote {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 18px;
+    font-size: var(--gk-text-compact);
+    color: var(--gk-fg-soft);
+  }
+  .gk-knowledge .kn-loopnote .gk-icon { width: 18px; height: 18px; }
+
+  /* Solution (ink) */
+  .gk-knowledge .kn-sol-head { max-width: 760px; }
+  .gk-knowledge .kn-sol-head h2 { margin-bottom: 20px; }
+  .gk-knowledge .kn-ask-title { margin: clamp(48px, 6vw, 64px) 0 20px; color: var(--gk-cream); }
+  .gk-knowledge .kn-questions { display: grid; grid-template-columns: repeat(6, 1fr); gap: 16px; }
+  .gk-knowledge .kn-qcard {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 120px;
+  }
+  .gk-knowledge .kn-qcard:nth-child(4),
+  .gk-knowledge .kn-qcard:nth-child(5) { grid-column: span 3; }
+  .gk-knowledge .kn-qcard p {
+    margin-top: auto;
+    font-family: var(--gk-font-head);
+    font-weight: 500;
+    font-size: var(--gk-text-title);
+    line-height: 1.3;
+    letter-spacing: -.02em;
+    color: var(--gk-cream);
+  }
+  .gk-knowledge .kn-qcard p::before { content: "\201C"; color: var(--gk-pink); }
+  .gk-knowledge .kn-qcard p::after { content: "\201D"; color: var(--gk-pink); }
+  .gk-knowledge .kn-sol-foot {
+    margin-top: 48px;
+    max-width: 800px;
+    font-size: var(--gk-text-body-lg);
+    line-height: 1.6;
+  }
+  .gk-knowledge .gk-section--ink .kn-sol-foot { color: var(--gk-cream); }
+
+  /* How it works */
+  .gk-knowledge .kn-ask-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(40px, 6vw, 72px);
+    align-items: center;
+  }
+  .gk-knowledge .kn-ask-grid h2 { margin-bottom: 28px; }
+  .gk-knowledge .kn-old h3 {
+    margin-bottom: 8px;
+    font-size: var(--gk-text-body);
+    letter-spacing: 0;
+    color: var(--gk-fg-soft);
+  }
+  .gk-knowledge .kn-old li {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    padding: 12px 0;
+    border-top: 1px solid var(--gk-line);
+    font-size: var(--gk-text-body);
+    color: var(--gk-fg-soft);
+  }
+  .gk-knowledge .kn-old li:first-child { border-top: 0; }
+  .gk-knowledge .kn-old .kn-x {
+    display: grid;
+    place-items: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: var(--gk-error-wash);
+    color: var(--gk-error-text);
+  }
+  .gk-knowledge .kn-old .kn-x .gk-icon { width: 14px; height: 14px; stroke-width: 2.4; }
+  .gk-knowledge .kn-differ {
+    margin-top: 28px;
+    font-family: var(--gk-font-head);
+    font-weight: 500;
+    font-size: var(--gk-text-title);
+    letter-spacing: -.02em;
+  }
+
+  .gk-knowledge .kn-flow {
+    padding: clamp(28px, 4vw, 40px) clamp(20px, 3vw, 34px);
+    border-radius: var(--gk-radius-xl);
+    background: var(--gk-ink);
+    color: var(--gk-cream);
+  }
+  .gk-knowledge .kn-flow ol { display: flex; flex-direction: column; align-items: center; }
+  /* Nodes are plain text stops on the connector line, not cards inside the panel. */
+  .gk-knowledge .kn-node {
+    width: 100%;
+    max-width: 400px;
+    padding: 6px 12px;
+    text-align: center;
+  }
+  .gk-knowledge .kn-node-cap { display: block; margin-bottom: 4px; font-family: var(--gk-font-head); font-weight: 500; font-size: var(--gk-text-caption); color: var(--gk-pink); }
+  .gk-knowledge .kn-node b { font-family: var(--gk-font-head); font-weight: 500; font-size: var(--gk-text-body-lg); }
+  .gk-knowledge .kn-node-src { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; margin-top: 10px; }
+  .gk-knowledge .kn-node-src span {
+    padding: 4px 10px;
+    border: 1px solid var(--gk-ink-edge);
+    border-radius: var(--gk-radius-sm);
+    background: var(--gk-ink-deep);
+    font-family: var(--gk-font-head);
+    font-weight: 500;
+    font-size: var(--gk-text-micro);
+  }
+  .gk-knowledge .kn-node--core b { color: var(--gk-green-bright); font-size: var(--gk-text-title); }
+  .gk-knowledge .kn-node--out b { color: var(--gk-pink); font-size: var(--gk-text-title); }
+  /* Connectors are a gecko trail walking down from your history to the outcome (DESIGN.md). */
+  .gk-knowledge .kn-flow li + li::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 32px;
+    margin: 2px auto;
+    background-color: var(--gk-green-bright);
+    -webkit-mask: var(--gk-trail-v) no-repeat 50% 0 / 30px 60px;
+            mask: var(--gk-trail-v) no-repeat 50% 0 / 30px 60px;
+  }
+  .gk-knowledge .kn-flow li:nth-child(odd) + li::before { -webkit-mask-position: 50% -30px; mask-position: 50% -30px; }
+  .gk-knowledge .kn-flow li { width: 100%; display: flex; flex-direction: column; align-items: center; }
+
+  .gk-knowledge .kn-stack {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 28px;
+    align-items: center;
+    margin-top: clamp(56px, 8vw, 88px);
+    padding: clamp(24px, 3vw, 36px) clamp(24px, 3.4vw, 40px);
+  }
+  .gk-knowledge .kn-stack-ico {
+    display: grid;
+    place-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: var(--gk-radius-lg);
+    background: var(--gk-green);
+    color: var(--gk-cream);
+  }
+  .gk-knowledge .kn-stack-ico .gk-icon { width: 28px; height: 28px; }
+  .gk-knowledge .kn-stack p {
+    max-width: none;
+    font-family: var(--gk-font-head);
+    font-weight: 500;
+    font-size: var(--gk-text-title);
+    line-height: 1.4;
+    letter-spacing: -.015em;
+  }
+  .gk-knowledge .kn-stack p span { font-family: var(--gk-font-body); font-weight: 600; color: var(--gk-fg-soft); }
+
+  /* History vs truth (ink) */
+  .gk-knowledge .kn-truth-head { max-width: 840px; }
+  .gk-knowledge .kn-truth-head h2 em { color: var(--gk-pink); }
+  .gk-knowledge .kn-compare {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: stretch;
+    margin-top: clamp(40px, 5vw, 60px);
+  }
+  .gk-knowledge .kn-card { padding: clamp(24px, 3vw, 34px); }
+  /* The category is the heading; the verdict is the large line under it (no kicker). */
+  .gk-knowledge .kn-card h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: var(--gk-text-body-lg);
+    letter-spacing: 0;
+  }
+  .gk-knowledge .kn-card h3::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: currentColor; }
+  .gk-knowledge .kn-card--hist h3 { color: var(--gk-pink); }
+  .gk-knowledge .kn-card--now h3 { color: var(--gk-green-bright); }
+  .gk-knowledge .gk-section--ink .kn-card .kn-verdict {
+    margin: 14px 0 10px;
+    font-family: var(--gk-font-head);
+    font-weight: 500;
+    font-size: var(--gk-text-title);
+    line-height: 1.3;
+    letter-spacing: -.02em;
+    color: var(--gk-cream);
+  }
+  .gk-knowledge .kn-neq {
+    display: grid;
+    place-items: center;
+    padding: 0 24px;
+    color: var(--gk-pink);
+  }
+  .gk-knowledge .kn-neq .gk-icon { width: 36px; height: 36px; }
+  .gk-knowledge .kn-sep { margin-top: 28px; font-size: var(--gk-text-body-lg); }
+  .gk-knowledge .gk-section--ink .kn-sep b { color: var(--gk-cream); }
+
+  .gk-knowledge .kn-loop {
+    display: grid;
+    grid-template-columns: 1fr 1.05fr;
+    gap: clamp(40px, 5vw, 64px);
+    align-items: center;
+    margin-top: clamp(72px, 9vw, 110px);
+  }
+  .gk-knowledge .kn-loop h3 { font-size: var(--gk-text-statement); margin-bottom: 20px; color: var(--gk-cream); }
+  .gk-knowledge .kn-pair { display: flex; flex-direction: column; gap: 12px; margin-top: 28px; }
+  .gk-knowledge .kn-pair div { display: flex; gap: 14px; align-items: baseline; font-size: var(--gk-text-body-lg); }
+  .gk-knowledge .gk-section--ink .kn-pair div { color: var(--gk-mist); }
+  .gk-knowledge .kn-pair b {
+    min-width: 88px;
+    font-family: var(--gk-font-head);
+    font-weight: 500;
+    font-size: var(--gk-text-body);
+  }
+  .gk-knowledge .kn-pair .kn-p b { color: var(--gk-green-bright); }
+  .gk-knowledge .kn-pair .kn-k b { color: var(--gk-pink); }
+  .gk-knowledge .gk-section--ink .kn-pair .kn-t { margin-top: 8px; color: var(--gk-cream); }
+  .gk-knowledge .kn-pair .kn-t em { font-style: normal; color: var(--gk-pink); }
+  .gk-knowledge .kn-loop-fig { padding: 24px; }
+  .gk-knowledge .kn-loop-fig svg { width: 100%; height: auto; }
+  /* Loop diagram: colours and type from tokens, not SVG attributes. */
+  .gk-knowledge .kn-svg-g { fill: none; stroke: var(--gk-green-bright); stroke-width: 2.5; }
+  .gk-knowledge .kn-svg-p { fill: none; stroke: var(--gk-pink); stroke-width: 2.5; }
+  .gk-knowledge .kn-svg-ahg { fill: var(--gk-green-bright); }
+  .gk-knowledge .kn-svg-ahp { fill: var(--gk-pink); }
+  .gk-knowledge .kn-svg-pill { fill: var(--gk-ink); stroke: var(--gk-ink-line); }
+  .gk-knowledge .kn-svg-node { fill: var(--gk-ink-lift); stroke-width: 2; }
+  .gk-knowledge .kn-svg-node--p { stroke: var(--gk-green-bright); }
+  .gk-knowledge .kn-svg-node--k { stroke: var(--gk-pink); }
+  .gk-knowledge .kn-loop-fig text { font-family: var(--gk-font-head); font-weight: 500; text-anchor: middle; }
+  .gk-knowledge .kn-loop-fig .kn-svg-tag { font-size: 13px; }
+  .gk-knowledge .kn-loop-fig .kn-svg-cap { font-size: 13px; }
+  .gk-knowledge .kn-loop-fig .kn-svg-name { font-size: 20px; fill: var(--gk-cream); }
+  .gk-knowledge .kn-loop-fig .kn-svg-verb { font-family: var(--gk-font-body); font-weight: 600; font-size: 13px; fill: var(--gk-mist); }
+  .gk-knowledge .kn-loop-fig .kn-svg-mid { font-size: 15px; fill: var(--gk-cream); }
+  .gk-knowledge .kn-loop-fig .is-g { fill: var(--gk-green-bright); }
+  .gk-knowledge .kn-loop-fig .is-p { fill: var(--gk-pink); }
+
+
+  @media (max-width: 960px) {
+    .gk-knowledge .kn-hero-grid,
+    .gk-knowledge .kn-problem-top,
+    .gk-knowledge .kn-ask-grid,
+    .gk-knowledge .kn-loop { grid-template-columns: 1fr; }
+    .gk-knowledge .kn-steps { grid-template-columns: 1fr; }
+    .gk-knowledge .kn-questions { grid-template-columns: 1fr 1fr; }
+    .gk-knowledge .kn-qcard,
+    .gk-knowledge .kn-qcard:nth-child(4) { grid-column: span 1; }
+    .gk-knowledge .kn-qcard:nth-child(5) { grid-column: span 2; }
+    .gk-knowledge .kn-compare { grid-template-columns: 1fr; }
+    .gk-knowledge .kn-neq { padding: 12px 0; }
+  }
+  @media (max-width: 600px) {
+    .gk-knowledge .kn-steps,
+    .gk-knowledge .kn-questions { grid-template-columns: 1fr; }
+    .gk-knowledge .kn-qcard:nth-child(5) { grid-column: span 1; }
+    .gk-knowledge .kn-step, .gk-knowledge .kn-step + .kn-step { padding: 16px 0; border-left: 0; }
+    .gk-knowledge .kn-qcard { min-height: 0; }
+    .gk-knowledge .kn-qcard p { margin-top: 0; }
+    .gk-knowledge .kn-step + .kn-step { border-top: 1px solid var(--gk-line); }
+    .gk-knowledge .kn-stack { grid-template-columns: 1fr; }
+    .gk-knowledge .kn-rec { grid-template-columns: 52px 1fr; }
+    .gk-knowledge .kn-rec-match { display: none; }
+    /* The loop diagram's labels get too small on phones; the Probe / Knowledge pair beside it says the same thing. */
+    .gk-knowledge .kn-loop-fig { display: none; }
+  }
+</style>
+
+<!-- Hero -->
+<section class="gk-section--cream kn-hero">
+  <div class="gk-wrap kn-hero-grid">
+    <div>
+      <h1>Your organization <em>already knows</em> the answer.</h1>
+      <p class="gk-lede">The problem is finding it when you need it. <strong>Gekko Knowledge</strong> lets your engineers ask years of tickets, incident reports and runbooks “Have we seen this before?” and get the matching records back.</p>
+      <div class="gk-actions">
+        <a class="gk-btn gk-btn--primary" href="contact.html">Start a Historical Ticket Trial
+          <svg class="gk-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+
+    <figure>
+      <div class="kn-mock">
+        <div class="kn-mock-bar" aria-hidden="true"><i></i><i></i><i></i><span>gekko / knowledge</span></div>
+        <div class="kn-mock-body">
+          <p class="kn-q">Have we seen this before? Site VPN tunnel drops every night around 2am.</p>
+          <div>
+            <p class="kn-a-head"><span class="kn-tick"><svg class="gk-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span>3 related records found in your history</p>
+            <ul class="kn-recs">
+              <li class="kn-rec"><span class="kn-rec-type">INC</span><span class="kn-rec-title">Tunnel flapping after firewall firmware update<small>Incident · resolved · root cause documented</small></span><span class="kn-rec-match">strong match</span></li>
+              <li class="kn-rec"><span class="kn-rec-type">KB</span><span class="kn-rec-title">IPsec rekey timer mismatch — runbook<small>Knowledge base · step-by-step fix</small></span><span class="kn-rec-match">related</span></li>
+              <li class="kn-rec"><span class="kn-rec-type">NOTE</span><span class="kn-rec-title">“Check the ISP maintenance window first.”<small>Engineer note · previous investigation</small></span><span class="kn-rec-match">related</span></li>
+            </ul>
+          </div>
+          <p class="kn-caveat"><b>History</b><span>Useful hypothesis. Verify against current evidence before concluding.</span></p>
+        </div>
+      </div>
+      <figcaption class="kn-mock-caption">Example query. Records are illustrative.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- Problem -->
+<section class="gk-section gk-section--cream">
+  <div class="gk-wrap">
+    <div class="kn-problem-top">
+      <h2>The knowledge exists. It’s just buried.</h2>
+      <div>
+        <p class="gk-lede">Your organization has years of knowledge buried in tickets, incident reports, runbooks, KB articles, engineer notes, and previous investigations.</p>
+        <ul class="gk-chips" aria-label="Where that knowledge lives">
+          <li class="gk-chip">Tickets</li><li class="gk-chip">Incident reports</li><li class="gk-chip">Runbooks</li>
+          <li class="gk-chip">KB articles</li><li class="gk-chip">Engineer notes</li><li class="gk-chip">Previous investigations</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="kn-restart">
+      <h3>When a new problem arrives, engineers often start over.</h3>
+      <ul class="kn-steps">
+        <li class="kn-step"><svg class="gk-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 20 20"/></svg><p>They search.</p></li>
+        <li class="kn-step"><svg class="gk-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg><p>They scroll.</p></li>
+        <li class="kn-step"><svg class="gk-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H10l-5 4v-4H4z"/></svg><p>They ask someone who might remember.</p></li>
+        <li class="kn-step"><svg class="gk-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.5 8A7.5 7.5 0 1 0 19.5 14"/><path d="M19 3.5V8h-4.5"/></svg><p>They try different keywords.</p></li>
+      </ul>
+      <p class="kn-loopnote"><svg class="gk-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.5 8A7.5 7.5 0 1 0 19.5 14"/><path d="M19 3.5V8h-4.5"/></svg>Then they repeat it for every new incident.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Solution -->
+<section class="gk-section gk-section--ink">
+  <div class="gk-wrap">
+    <div class="kn-sol-head">
+      <h2>Turn your history into organizational memory.</h2>
+      <p class="gk-lede">Gekko Knowledge makes your historical operational knowledge searchable through AI.</p>
+    </div>
+
+    <h3 class="kn-ask-title">Ask questions the way your engineers actually think.</h3>
+    <ul class="kn-questions">
+      <li class="gk-panel kn-qcard"><p>Have we seen this before?</p></li>
+      <li class="gk-panel kn-qcard"><p>How did we resolve it?</p></li>
+      <li class="gk-panel kn-qcard"><p>What caused the problem?</p></li>
+      <li class="gk-panel kn-qcard"><p>Who has worked on this system?</p></li>
+      <li class="gk-panel kn-qcard"><p>What should I check first?</p></li>
+    </ul>
+
+    <p class="kn-sol-foot">Gekko finds relevant information across your historical tickets and knowledge sources and brings the context directly into the conversation.</p>
+  </div>
+</section>
+
+<!-- How it works -->
+<section class="gk-section gk-section--cream">
+  <div class="gk-wrap">
+    <div class="kn-ask-grid">
+      <div>
+        <h2>Stop searching. Start asking.</h2>
+        <div class="gk-panel kn-old">
+          <h3>Traditional knowledge systems depend on</h3>
+          <ul>
+            <li><span class="kn-x"><svg class="gk-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></span><span>finding the right words</span></li>
+            <li><span class="kn-x"><svg class="gk-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></span><span>knowing where information lives</span></li>
+            <li><span class="kn-x"><svg class="gk-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></span><span>remembering how previous incidents were documented</span></li>
+          </ul>
+        </div>
+        <p class="kn-differ">Gekko works differently.</p>
+      </div>
+
+      <figure class="kn-flow" aria-label="How Gekko Knowledge works">
+        <ol>
+          <li><div class="kn-node"><span class="kn-node-cap">Your history</span>
+            <div class="kn-node-src"><span>Tickets</span><span>KBs</span><span>Runbooks</span><span>Incidents</span></div></div></li>
+          <li><div class="kn-node kn-node--core"><span class="kn-node-cap">Indexed by</span><b>Gekko Knowledge</b></div></li>
+          <li><div class="kn-node kn-node--you"><span class="kn-node-cap">You</span><b>Ask a question</b></div></li>
+          <li><div class="kn-node"><span class="kn-node-cap">Gekko returns</span><b>Relevant historical knowledge</b></div></li>
+          <li><div class="kn-node kn-node--out"><span class="kn-node-cap">Outcome</span><b>Better decisions</b></div></li>
+        </ol>
+      </figure>
+    </div>
+
+    <div class="gk-panel kn-stack">
+      <span class="kn-stack-ico"><svg class="gk-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 21 8l-9 5-9-5z"/><path d="m3 13 9 5 9-5"/><path d="m3 17.5 9 5 9-5"/></svg></span>
+      <p>Your ticketing system, knowledge base and runbooks stay where they are. <span>Gekko makes what’s inside them answerable.</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- History vs truth -->
+<section class="gk-section gk-section--ink">
+  <div class="gk-wrap">
+    <div class="kn-truth-head">
+      <h2>And Gekko doesn’t confuse <em>history</em> with evidence.</h2>
+    </div>
+
+    <div class="kn-compare">
+      <div class="gk-panel kn-card kn-card--hist">
+        <h3>Historical knowledge</h3>
+        <p class="kn-verdict">A lead to test.</p>
+        <p>A previous incident suggests where to look. It doesn’t prove that today’s incident has the same cause.</p>
+      </div>
+      <div class="kn-neq" aria-hidden="true"><svg class="gk-icon" viewBox="0 0 24 24"><path d="M5 9.5h14M5 14.5h14M15.5 5l-7 14"/></svg></div>
+      <div class="gk-panel kn-card kn-card--now">
+        <h3>Current evidence</h3>
+        <p class="kn-verdict">What decides the cause.</p>
+        <p>The logs, metrics and checks from the incident in front of you.</p>
+      </div>
+    </div>
+    <p class="kn-sep">That’s why <b>Gekko separates historical knowledge from current evidence.</b></p>
+
+    <div class="kn-loop">
+      <div>
+        <h3>Gekko Probe and Gekko Knowledge: an investigation and learning loop.</h3>
+        <p class="gk-lede">When paired with <a href="gekko-probe.html">Gekko Probe</a>, the system can investigate the current incident, gather evidence, and then use historical knowledge to help evaluate what happened.</p>
+        <div class="kn-pair">
+          <div class="kn-p"><b>Probe</b><span>investigates what is happening now.</span></div>
+          <div class="kn-k"><b>Knowledge</b><span>remembers what happened before.</span></div>
+          <div class="kn-t"><span>Together, they form an <em>investigation and learning loop</em>.</span></div>
+        </div>
+      </div>
+
+      <figure class="gk-panel kn-loop-fig">
+        <svg viewBox="0 0 560 340" role="img" aria-label="Gekko Probe gathers current evidence; Gekko Knowledge supplies historical context; findings feed back into history.">
+          <defs>
+            <marker id="kn-ah-g" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="kn-svg-ahg" d="M0 0L10 5L0 10z"/></marker>
+            <marker id="kn-ah-p" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="kn-svg-ahp" d="M0 0L10 5L0 10z"/></marker>
+          </defs>
+          <path class="kn-svg-g" d="M100 116 C 150 20, 410 20, 458 110" marker-end="url(#kn-ah-g)"/>
+          <path class="kn-svg-p" d="M460 224 C 410 320, 150 320, 102 230" marker-end="url(#kn-ah-p)"/>
+          <rect class="kn-svg-pill" x="210" y="28" width="140" height="28" rx="14"/>
+          <text class="kn-svg-tag is-g" x="280" y="46.5">current evidence</text>
+          <rect class="kn-svg-pill" x="200" y="284" width="160" height="28" rx="14"/>
+          <text class="kn-svg-tag is-p" x="280" y="302.5">historical context</text>
+
+          <rect class="kn-svg-node kn-svg-node--p" x="20" y="118" width="160" height="104" rx="16"/>
+          <text class="kn-svg-cap is-g" x="100" y="150">Now</text>
+          <text class="kn-svg-name" x="100" y="178">Gekko Probe</text>
+          <text class="kn-svg-verb" x="100" y="202">investigates</text>
+
+          <rect class="kn-svg-node kn-svg-node--k" x="380" y="118" width="160" height="104" rx="16"/>
+          <text class="kn-svg-cap is-p" x="460" y="150">Before</text>
+          <text class="kn-svg-name" x="460" y="178">Knowledge</text>
+          <text class="kn-svg-verb" x="460" y="202">remembers</text>
+
+          <text class="kn-svg-mid" x="280" y="164">Investigation</text>
+          <text class="kn-svg-mid" x="280" y="184">&amp; learning loop</text>
+        </svg>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- Final CTA -->
+<section class="gk-section gk-section--green gk-cta" id="trial">
+  <div class="gk-wrap">
+    <h2>It’s time to make that knowledge work for you.</h2>
+    <p class="gk-cta-line">Your organization has spent years creating knowledge.</p>
+    <div class="gk-actions">
+      <a class="gk-btn gk-btn--primary" href="contact.html">Start a Historical Ticket Trial
+        <svg class="gk-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+</div>
+
+</div></div></div>
+</div></div></div></div>
+</section>
+</article></main>
+
+<footer class="pv-footer">
+  <div class="pv-footer-grid">
+    <div>
+      <h2>Gekko Corporation</h2>
+      <address>12400 SE 38th St. #40542<br>Bellevue, WA 98015<br><a href="tel:+14256799188">425-679-9188</a><br><a href="mailto:Inquire@gekkocorporation.com">Inquire@gekkocorporation.com</a></address>
+      <div class="pv-social">
+        <a target="_blank" rel="noopener" href="https://www.facebook.com/Gekko-Corporation-220052488202857/" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg></a>
+        <a target="_blank" rel="noopener" href="https://www.linkedin.com/company/17898245" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5h3V19H5zM6.5 4a1.75 1.75 0 1 1 0 3.5 1.75 1.75 0 0 1 0-3.5zM10 8.5h2.9v1.5c.6-1 1.8-1.8 3.4-1.8 3 0 3.7 2 3.7 4.6V19h-3v-5.6c0-1.3 0-3-1.8-3s-2.2 1.4-2.2 2.9V19h-3z"/></svg></a>
+        <a target="_blank" rel="noopener" href="https://open.spotify.com/show/09KQ93p39xnAF5Jl684neK" aria-label="Spotify podcast"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zm4.1 13a.6.6 0 0 1-.8.2c-2.2-1.3-5-1.6-8.2-.9a.6.6 0 1 1-.3-1.1c3.5-.8 6.6-.5 9.1 1a.6.6 0 0 1 .2.8zm1.1-2.5a.7.7 0 0 1-1 .2c-2.5-1.5-6.4-2-9.4-1.1a.7.7 0 0 1-.4-1.4c3.4-1 7.7-.5 10.6 1.3.3.2.4.7.2 1zm.1-2.6C14.3 9.1 9.5 9 6.6 9.8a.8.8 0 1 1-.5-1.6c3.3-1 8.6-.8 12 1.2a.8.8 0 0 1-.8 1.5z"/></svg></a>
+      </div>
+    </div>
+    <div><h2>Products</h2><ul><li><a href="gekko-probe.html">Gekko Probe</a></li><li><a href="gekko-knowledge.html">Gekko Knowledge</a></li><li><a href="budtender-ai.html">Budtender AI</a></li></ul></div>
+    <div><h2>Company</h2><ul><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li><li><a href="https://www.gekkocorporation.com/services-policy" target="_blank" rel="noopener">Services Policy</a></li></ul></div>
+    <div><h2>Social</h2><ul><li><a href="https://www.gekkocorporation.com/blog" target="_blank" rel="noopener">Blog</a></li><li><a href="podcast.html">Podcast</a></li></ul></div>
+  </div>
+  <div class="pv-footer-base"><span>© Gekko Corporation</span><a href="https://www.gekkocorporation.com/website-attributions" target="_blank" rel="noopener">Website Attributions</a></div>
+</footer>
+
+<script>(function () {
+if (window.gkThemeToggle) return;
+window.gkThemeToggle = true;
+var root = document.documentElement;
+var mq = window.matchMedia ? matchMedia("(prefers-color-scheme: dark)") : { matches: false };
+var buttons = [];
+var ICON = '<svg class="gk-t-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>' +
+'<svg class="gk-t-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6l1.4 1.4M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4"/></svg>';
+function current() { return root.getAttribute("data-theme") || (mq.matches ? "dark" : "light"); }
+function sync() {
+var dark = current() === "dark";
+buttons.forEach(function (b) {
+var label = dark ? "Switch to light mode" : "Switch to dark mode";
+b.setAttribute("aria-pressed", String(dark));
+b.setAttribute("aria-label", label);
+b.title = label;
+});
+}
+function set(theme) {
+root.setAttribute("data-theme", theme);
+try { localStorage.setItem("gk-theme", theme); } catch (e) {}
+sync();
+}
+function make(extra) {
+var b = document.createElement("button");
+b.type = "button";
+b.className = "gk-theme-toggle" + (extra ? " " + extra : "");
+b.innerHTML = ICON;
+b.addEventListener("click", function () { set(current() === "dark" ? "light" : "dark"); });
+buttons.push(b);
+return b;
+}
+function mount() {
+var slots = document.querySelectorAll("[data-gk-theme-slot], .header-actions--right");
+if (slots.length) {
+Array.prototype.forEach.call(slots, function (s) {
+if (!s.querySelector(".gk-theme-toggle")) s.insertBefore(make(), s.firstChild);
+});
+} else if (!document.querySelector(".gk-theme-toggle--float")) {
+document.body.appendChild(make("gk-theme-toggle--float"));
+}
+sync();
+}
+if (mq.addEventListener) mq.addEventListener("change", sync);
+if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", mount);
+else mount();
+})();</script>
+<script>
+if (window.parent !== window) {
+  window.parent.postMessage({ gkPreview: "gekko-knowledge" }, "*");
+  addEventListener("keydown", function (e) {
+    if (e.target.closest && e.target.closest("input, textarea, select, [contenteditable]")) return;
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    if (e.key === "h" || e.key === "H" || e.key === "Escape") window.parent.postMessage({ gkKey: e.key }, "*");
+  });
+}
+</script>
+</body></html>
